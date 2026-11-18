@@ -1,8 +1,13 @@
+import { ModulesProvider } from '@/context/ModulesContext';
 import { FontAwesome6, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Tabs } from "expo-router";
+import { setupNotificationHandler } from '../utils/notifications';
+
+setupNotificationHandler();
 
 export default function TabLayout() {
   return (
+    <ModulesProvider>
     <Tabs screenOptions={{tabBarActiveTintColor: '#FFFFFF' , tabBarStyle: {
       backgroundColor: "#1E293B",
       borderTopWidth: 0,
@@ -10,7 +15,7 @@ export default function TabLayout() {
       tabBarInactiveTintColor: '#94A3B8',
       tabBarLabelStyle: {
         fontSize: 12,
-        fontWeight: 600,
+        fontWeight: '600',
       },
       headerStyle: {
         backgroundColor: '#1E293B'
@@ -36,10 +41,11 @@ export default function TabLayout() {
         />
       <Tabs.Screen
         name="module"
-        options={{ title: 'Modules', tabBarIcon: ({color, size}) => (
+        options={{ title: 'Modules', headerShown: false, tabBarIcon: ({color, size}) => (
           <FontAwesome6 name="graduation-cap" size={size} color={color} />
         )}}
         />
     </Tabs>
+    </ModulesProvider>
     )
 }
