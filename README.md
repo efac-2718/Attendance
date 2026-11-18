@@ -1,10 +1,10 @@
 # Attendance Calc
 
-**Name:** [YOUR FULL NAME]
+**Name:** Vishva Peiris
 
-**Student ID:** [YOUR STUDENT ID]
+**Student ID:** EC/2022/070
 
-**Demo video:** [PASTE YOUR VIDEO LINK HERE]
+**Demo video:** (https://drive.google.com/drive/folders/11yaLFO9thRrZrtQwTWtm352Xdlfpcy-E?usp=sharing)
 
 Mobile Application Development – Assignment 01
 
@@ -218,7 +218,7 @@ npx expo start -c
 
 ## 8. Demo video
 
-**[PASTE YOUR VIDEO LINK HERE]**
+(https://drive.google.com/drive/folders/11yaLFO9thRrZrtQwTWtm352Xdlfpcy-E?usp=sharing)
 
 The video shows:
 
